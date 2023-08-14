@@ -53,6 +53,9 @@ public class ProgramRunner {
 		System.out.println("DFS of this graph: ");
 		GraphUtil.printList(GraphUtil.dfsOfGraph(vertices+1, graph.getList()));
 		
+		int connected_components = ConnectedComponents.find(vertices, graph.getList());
+		System.out.println("Connected components: "+connected_components);
+		
 		sc.close();
 	}
 
